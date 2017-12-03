@@ -10,7 +10,7 @@ class Printer extends Actor with ActorLogging {
 import Printer._ //gets us object printer
 
   def receive = {
-    case Print(message)=> println(s"$message")
+    case Print(message) => println(s"$message")
     case PrintCurrency(currency) => println(s"$currency")
   }
 }
